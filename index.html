@@ -471,8 +471,8 @@ footer a:hover{text-decoration:underline}
       <article class="card wide reveal" data-k="research">
         <span class="kind">LLM · Signal research · Aug – Oct 2026</span>
         <h3>Explaining Markets: UChicago Booth × Optiver competition</h3>
-        <span class="win">🏆 Ranked #2 of 198 · Q3 2026 contest</span>
-        <p class="sub-note">Three entries all finished in the top 12: #2, #5, and #12.</p>
+        <span class="win">🏆 Ranked #2 of 198 · Q3 2026 contest (preliminary)</span>
+        <p class="sub-note">Three entries all finished in the top 12 (#2, #5, #12). Official results Oct 9.</p>
         <p>Predicting next-day abnormal returns from earnings calls. Out of 40+ candidate signals across 7,450 events, three held up under permutation tests, held-out quarters, a null control, and a lookahead audit.</p>
         <div class="chips"><span class="chip">Python</span><span class="chip">LLM evaluation</span><span class="chip">Permutation tests</span></div>
         <div class="links">
@@ -484,7 +484,7 @@ footer a:hover{text-decoration:underline}
       <article class="card reveal" data-k="research">
         <span class="kind">Time series · OLS · 2025</span>
         <h3>ChiNext Index Predictability</h3>
-        <p>A two-layer OLS framework with pre-specified rules for forecasting ChiNext index spreads over 10 years, rebuilt from public data with lookahead tests. No signal held up out of sample, so the practical answer was to choose by risk profile rather than timing.</p>
+        <p>A two-layer OLS framework with pre-specified rules for forecasting ChiNext index spreads over 10 years, rebuilt from public data with lookahead tests. Out of sample, no spread forecast beat the historical mean by more than noise.</p>
         <div class="chips"><span class="chip">statsmodels</span><span class="chip">Newey-West</span><span class="chip">80/20 out-of-sample</span></div>
         <div class="links"><a class="more" href="https://github.com/angelinahuang030406-del/chinext-predictability" target="_blank" rel="noopener">GitHub ↗</a></div>
       </article>
@@ -502,7 +502,7 @@ footer a:hover{text-decoration:underline}
         <span class="kind">Portfolio construction · Walk-forward test · 2025 – 2026</span>
         <h3>Did Intuition Beat the Optimizer?</h3>
         <p class="sub-note">Extends a four-person UC Berkeley UGBA 133 group project · built with AI coding assistance</p>
-        <p>I rebuilt my team's judgment-based 10-asset portfolio in Python and tested it against 7 systematic rules (mean-variance, risk parity, HRP), each re-estimated yearly on past data only. Our weights held their own; the defensive sleeve was the weak spot.</p>
+        <p>I rebuilt my team's judgment-based 10-asset portfolio in Python and tested it against 7 systematic rules (mean-variance, risk parity, HRP), each re-estimated yearly on past data only. No rule beat our weights by more than noise, though the asset menu itself was chosen with hindsight.</p>
         <div class="chips"><span class="chip">Python</span><span class="chip">Walk-forward backtest</span><span class="chip">Block bootstrap</span><span class="chip">Factor attribution</span></div>
         <div class="links"><a class="more" href="https://github.com/angelinahuang030406-del/asset-allocation-quant" target="_blank" rel="noopener">GitHub ↗</a></div>
       </article>
