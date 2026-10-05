@@ -148,7 +148,7 @@ section.alt{background:var(--paper-mid)}
 .filters{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:2rem}
 .filters button{font:inherit;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:.45rem .9rem;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .15s}
 .filters button.on,.filters button:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
 .card{background:var(--paper);border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;gap:.7rem;transition:transform .2s,box-shadow .2s}
 .card:hover{transform:translateY(-4px);box-shadow:6px 6px 0 var(--ink)}
 .card.hide{display:none}
@@ -247,7 +247,7 @@ section.alt{background:var(--paper-mid)}
 .encore .chapter-tag::after{display:none}
 .encore .section-h{color:#fff}
 .encore .lead{color:rgba(246,243,236,.7);margin:0 auto 2.2rem}
-.tiktok{width:min(340px,100%);margin:0 auto;aspect-ratio:9/16;background:#000;border:1px solid rgba(255,255,255,.2);position:relative}
+.tiktok{width:min(260px,100%);margin:0 auto;aspect-ratio:9/16;background:#000;border:1px solid rgba(255,255,255,.2);position:relative}
 .tiktok video{width:100%;height:100%;object-fit:cover}
 .encore .of{font-size:.55em;color:var(--cork);font-weight:600}
 .tiktok .ph{display:none;position:absolute;inset:0;align-items:center;justify-content:center;padding:1.5rem;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(246,243,236,.55);border:1.5px dashed rgba(255,255,255,.25)}
@@ -256,6 +256,8 @@ section.alt{background:var(--paper-mid)}
 
 footer{background:var(--ink);color:rgba(246,243,236,.5);border-top:1px solid rgba(255,255,255,.12);padding:1.4rem 0;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
 footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:var(--cork);text-decoration:none}
+footer a:hover{text-decoration:underline}
 
 /* reveal */
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
@@ -319,15 +321,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
           <span class="wip">🚧 In progress</span>
         </a>
       </div>
-      <ol class="index">
-        <li><a href="#about">About me <span>01 ↓</span></a></li>
-        <li><a href="#experience">Experience <span>02 ↓</span></a></li>
-        <li><a href="#research">Research <span>03 ↓</span></a></li>
-        <li><a href="#writing">Writing <span>04 ↓</span></a></li>
-        <li><a href="#skills">Skills &amp; Tools <span>05 ↓</span></a></li>
-        <li><a href="#court">On the court <span>06 ↓</span></a></li>
-        <li><a href="#contact">Contact <span>07 ↓</span></a></li>
-      </ol>
       <div class="btns">
         <a class="btn solid" href="#research">View my research</a>
         <a class="btn" href="#contact">Get in touch</a>
@@ -358,10 +351,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
     <div class="about-grid">
       <div class="about-text reveal">
         <p>I'm a Master in Finance student at UChicago Booth. I like hard questions that live in messy data, whether they come from markets, credit risk, or consumers.</p>
-        <p>I've worked with very different kinds of data: credit records and 3M+ user events at China Post Consumer Finance, ChiNext index returns at Golden Eagle Fund Management, and a 70-year global banknote dataset as a research assistant to Prof. Barry Eichengreen at Berkeley. I also researched Chinese consumer markets at Daxue Consulting, and I used LLMs to read earnings calls in the UChicago Booth × Optiver competition.</p>
-        <p>What ties this together is honesty about evidence. Before I trust a result, I test it on data it hasn't seen and look for ways it could be fooling me. A careful "this doesn't work" is worth more to me than an exciting number I can't defend.</p>
-        <p>I also like building things from zero. In college I started a cross-border K-pop merchandise business and grew it to 4,000+ customers, using my own sales data to drive pricing and restocking.</p>
-        <p>Outside of work I play competitive badminton doubles (2026 PBC Spring Open champion), and I speak Mandarin, English, and Cantonese.</p>
+        <p>I've worked with credit records and 3M+ user events at China Post Consumer Finance, ChiNext index returns at Golden Eagle, a 70-year banknote dataset with Prof. Barry Eichengreen, Chinese consumer markets at Daxue Consulting, and earnings calls read by LLMs in the Booth × Optiver competition. Whatever the data, I test a result on data it hasn't seen before I trust it. A careful "this doesn't work" is worth more to me than an exciting number I can't defend.</p>
+        <p>Outside of work, I built a cross-border K-pop merchandise business to 4,000+ customers, play competitive badminton doubles (2026 PBC Spring Open champion), and speak Mandarin, English, and Cantonese.</p>
         <div class="tags">
           <span class="tag hl">Signal research</span><span class="tag">Factor models</span><span class="tag">Time series</span><span class="tag hl">LLMs</span><span class="tag">Credit risk ML</span><span class="tag">Backtesting</span><span class="tag hl">🏸 Doubles</span><span class="tag hl">K-pop</span><span class="tag">Photography</span><span class="tag">Calligraphy</span><span class="tag">普通话 · English · 粵語</span>
         </div>
@@ -482,7 +473,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
         <h3>Explaining Markets: UChicago Booth × Optiver competition</h3>
         <span class="win">🏆 Ranked #2 of 198 · Q3 2026 contest</span>
         <p class="sub-note">Three entries all finished in the top 12: #2, #5, and #12.</p>
-        <p>Predicting next-day abnormal returns from earnings calls. I screened 40+ candidate signals across 7,450 earnings events. Three held up: prior-quarter earnings text, analyst rating actions, and an earnings-surprise adjustment. Signals were validated with permutation tests, held-out quarters, a null control, and a lookahead audit of all input data.</p>
+        <p>Predicting next-day abnormal returns from earnings calls. Out of 40+ candidate signals across 7,450 events, three held up under permutation tests, held-out quarters, a null control, and a lookahead audit.</p>
         <div class="chips"><span class="chip">Python</span><span class="chip">LLM evaluation</span><span class="chip">Permutation tests</span></div>
         <div class="links">
           <span class="soon">🚧 Project site: under construction</span>
@@ -493,7 +484,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <article class="card reveal" data-k="research">
         <span class="kind">Time series · OLS · 2025</span>
         <h3>ChiNext Index Predictability</h3>
-        <p>Can you forecast ChiNext index spreads a month ahead? I ran a two-layer OLS study with pre-specified rules over 10 years of monthly data. The in-sample signals looked real, but none survived out of sample. I traced each one to the 2015 crash, a backfill artifact, or noise. The study was rebuilt from public data, with tests that check for lookahead.</p>
+        <p>A two-layer OLS framework with pre-specified rules for forecasting ChiNext index spreads over 10 years, rebuilt from public data with lookahead tests. No signal held up out of sample, so the practical answer was to choose by risk profile rather than timing.</p>
         <div class="chips"><span class="chip">statsmodels</span><span class="chip">Newey-West</span><span class="chip">80/20 out-of-sample</span></div>
         <div class="links"><a class="more" href="https://github.com/angelinahuang030406-del/chinext-predictability" target="_blank" rel="noopener">GitHub ↗</a></div>
       </article>
@@ -502,16 +493,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
         <span class="kind">Course project · Booth · Autumn 2026</span>
         <h3>Cross-Asset Return Predictability: An Out-of-Sample Test</h3>
         <p class="sub-note">BUSN 41210 Financial Analytics · Chicago Booth</p>
-        <p>Do asset characteristics (momentum, value, carry, risk) and macro data forecast next-month returns in a multi-asset panel, and does trading on the forecasts beat simple rules after costs? I ran 57 model specifications under a strict out-of-sample protocol with placebo tests. A public-data replication with US-listed ETFs is in progress.</p>
+        <p>Do asset characteristics and macro data forecast next-month returns in a multi-asset panel, and does trading on them beat simple rules after costs? 57 specifications under a strict out-of-sample protocol with placebo tests.</p>
         <div class="chips"><span class="chip">Python</span><span class="chip">Out-of-sample R²</span><span class="chip">Placebo tests</span><span class="chip">Portfolio backtest</span></div>
         <div class="links"><span class="soon">🚧 GitHub: under construction</span></div>
       </article>
 
-      <article class="card wide reveal" data-k="course">
+      <article class="card reveal" data-k="course">
         <span class="kind">Portfolio construction · Walk-forward test · 2025 – 2026</span>
         <h3>Did Intuition Beat the Optimizer?</h3>
         <p class="sub-note">Extends a four-person UC Berkeley UGBA 133 group project · built with AI coding assistance</p>
-        <p>My team picked the weights of a 10-asset foundation portfolio by judgment. I rebuilt the backtest in Python, with a 0.999 monthly correlation to the course tool. I then tested it against 7 systematic rules, including mean-variance, risk parity and HRP, each re-estimated every January using only past data, from 2010 to 2026. No rule beat our weights by more than bootstrap noise. Our claimed downside protection did not hold up. The portfolio lost more than a plain 60/40 in 2008, 2011 and 2020, mostly because its defensive sleeve lagged Treasuries.</p>
+        <p>I rebuilt my team's judgment-based 10-asset portfolio in Python and tested it against 7 systematic rules (mean-variance, risk parity, HRP), each re-estimated yearly on past data only. Our weights held their own; the defensive sleeve was the weak spot.</p>
         <div class="chips"><span class="chip">Python</span><span class="chip">Walk-forward backtest</span><span class="chip">Block bootstrap</span><span class="chip">Factor attribution</span></div>
         <div class="links"><a class="more" href="https://github.com/angelinahuang030406-del/asset-allocation-quant" target="_blank" rel="noopener">GitHub ↗</a></div>
       </article>
@@ -560,7 +551,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <div class="skill"><h4>ML &amp; Infra</h4><ul><li>Gradient boosting</li><li>Deep tabular models</li><li>Feature engineering</li><li>LLM evaluation &amp; prompt design</li><li>Linux · SSH · Docker</li></ul></div>
       <div class="skill"><h4>Communicate</h4><ul><li>Research reports</li><li>Investment decks</li><li>Tableau · Excel / VBA</li><li>普通话 · English · 粵語</li></ul></div>
     </div>
-    <div class="traits" aria-hidden="true"><span>OUT-OF-SAMPLE FIRST</span><span>LEAKAGE CHECKS</span><span>PLACEBO TESTS</span><span>AFTER-COST RESULTS</span><span>HONEST NULLS</span></div>
   </div>
 </section>
 
@@ -608,7 +598,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   <div class="wrap">
     <p class="chapter-tag">Chapter seven</p>
     <h2 class="section-h h-serif reveal">Let's talk</h2>
-    <p class="lead reveal">I'm recruiting for Summer 2027 roles in quantitative research, strats, and risk. If you need someone who tests ideas honestly and also plays a good net game, I'd love to hear from you.</p>
+    <p class="lead reveal">I'm recruiting for Summer 2027. Email is the fastest way to reach me.</p>
     <div class="contact-list reveal">
       <a href="mailto:chuang30@chicagobooth.edu"><span class="k">Email</span><span class="v">chuang30@chicagobooth.edu</span><span class="arr">↗</span></a>
       <a href="https://www.linkedin.com/in/chuhan-huang-7b2040335" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">chuhan-huang</span><span class="arr">↗</span></a>
@@ -634,7 +624,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 </main>
 
 <footer>
-  <div class="wrap"><span>Angelina Huang</span><span>Chicago, IL ✦ © 2026</span></div>
+  <div class="wrap"><span>Angelina Huang</span><span>Design inspired by <a href="https://www.linkedin.com/in/liujun-cchen/" target="_blank" rel="noopener">Liujun Chen ↗</a></span><span>Chicago, IL ✦ © 2026</span></div>
 </footer>
 
 <script>
